@@ -7,7 +7,7 @@ A simple helloword example using corva and java.
 ```sh
 $ idlj -fall Hello.idl
 $ javac *.java HelloApp/*.java
-$orbd -ORBInitialPort 1050 -ORBInitialHost localhost&
+$ orbd -ORBInitialPort 1050 -ORBInitialHost localhost&
 ```
 2. Now open a new terminal in the same directory and run this command:
 
