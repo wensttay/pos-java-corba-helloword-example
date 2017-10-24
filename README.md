@@ -15,4 +15,4 @@ $ orbd -ORBInitialPort 1050 -ORBInitialHost localhost&
 $ java HelloClient -ORBInitialPort 1050 -ORBInitialHost localhost&
 ```
 
-Obs: All commands are obligatorily executed on "Hello.idl" folder.
+Obs: All commands are obligatorily executed on "Hello.idl" folder
