@@ -45,8 +45,7 @@ public class HelloServer {
     } 
 	
       catch (Exception e) {
-        System.err.println("ERROR: " + e);
-        e.printStackTrace(System.out);
+        System.err.println("Erro no HelloServer.class !");
       }
 	  
       System.out.println("HelloServer Exiting ...");

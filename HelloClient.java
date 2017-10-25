@@ -11,11 +11,10 @@ public class HelloClient
     {
       try{
         // create and initialize the ORB
-	ORB orb = ORB.init(args, null);
+		ORB orb = ORB.init(args, null);
 
         // get the root naming context
-        org.omg.CORBA.Object objRef = 
-	    orb.resolve_initial_references("NameService");
+        org.omg.CORBA.Object objRef = orb.resolve_initial_references("NameService");
         // Use NamingContextExt instead of NamingContext. This is 
         // part of the Interoperable naming Service.  
         NamingContextExt ncRef = NamingContextExtHelper.narrow(objRef);
@@ -26,10 +25,10 @@ public class HelloClient
 
         System.out.println("Obtained a handle on server object: " + helloImpl);
         System.out.println(helloImpl.sayHello());
-        helloImpl.shutdown();
+        // helloImpl.shutdown();
 
 	} catch (Exception e) {
-          System.out.println("ERROR : " + e) ;
+          System.out.println("Error na HelloClient.class !");
 	  e.printStackTrace(System.out);
 	  }
     }
